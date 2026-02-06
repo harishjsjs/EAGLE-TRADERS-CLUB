@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Traders Club | Professional Stock Market Skills</title>
+    <meta name="description" content="Trade Smart. Learn Professional Stock Market Skills. Join the monthly batch at Eagle Traders Club.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Background Elements -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="hologram-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <i class="fa-solid fa-chart-line"></i> EAGLE TRADERS CLUB
+            </a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#batch-details">Batch Info</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact" class="nav-cta">Join Now</a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="glitch-text" data-text="EAGLE TRADERS CLUB">EAGLE TRADERS CLUB</h1>
+                <p class="subtitle">Trade Smart. Learn Professional Stock Market Skills.</p>
+                
+                <div class="hero-badge">
+                    <i class="fa-regular fa-calendar-check"></i> NEW BATCH STARTS EVERY MONTH – 15TH
+                </div>
+
+                <div class="countdown-container">
+                    <p>Next Batch Starts In:</p>
+                    <div id="countdown" class="countdown-timer">
+                        <div class="time-block"><span id="days">00</span>Days</div>
+                        <div class="time-block"><span id="hours">00</span>Hrs</div>
+                        <div class="time-block"><span id="minutes">00</span>Mins</div>
+                        <div class="time-block"><span id="seconds">00</span>Secs</div>
+                    </div>
+                </div>
+
+                <button class="cta-btn glow-effect" onclick="openJoinModal()">JOIN NOW</button>
+            </div>
+            <div class="hero-visual">
+                <!-- 3D/Holographic element placeholder -->
+                <div class="holographic-chart">
+                    <div class="floating-card glass-card">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>NIFTY 50</span>
+                        <span class="positive">+1.25%</span>
+                    </div>
+                    <div class="floating-card glass-card card-2">
+                        <i class="fa-solid fa-coins"></i>
+                        <span>BANK NIFTY</span>
+                        <span class="positive">+0.85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Batch Details Section -->
+    <section id="batch-details" class="section">
+        <div class="container">
+            <h2 class="section-title">Batch <span class="highlight">Details</span></h2>
+            <div class="glass-card batch-card">
+                <div class="batch-info-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>Start Date</h3>
+                    <p>Every Month – 15th</p>
+                </div>
+                <div class="batch-info-item">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Mode</h3>
+                    <p>Online Live Classes</p>
+                </div>
+                <div class="batch-info-item">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>Level</h3>
+                    <p>Beginner to Advanced</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="highlight">Us</span></h2>
+            <div class="grid-3">
+                <div class="feature-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-chart-bar"></i></div>
+                    <h3>Live Market Training</h3>
+                    <p>Learn by observing real market movements and live trading setups.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>Beginner Friendly</h3>
+                    <p>From basics to advanced strategies explained in simple language.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Risk Management</h3>
+                    <p>Master the art of protecting capital before chasing profits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses / Program Overview -->
+    <section id="courses" class="section">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Program</span></h2>
+            <div class="program-grid">
+                <div class="program-card glass-card">
+                    <h3>Basics of Stock Market</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Introduction to Equity</li>
+                        <li><i class="fa-solid fa-check"></i> IPOs & Demat Accounts</li>
+                        <li><i class="fa-solid fa-check"></i> Market Terminology</li>
+                    </ul>
+                </div>
+                <div class="program-card glass-card">
+                    <h3>Technical Analysis</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Candlestick Patterns</li>
+                        <li><i class="fa-solid fa-check"></i> Support & Resistance</li>
+                        <li><i class="fa-solid fa-check"></i> Indicators & Oscillators</li>
+                    </ul>
+                </div>
+                <div class="program-card glass-card">
+                    <h3>Future & Options</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Option Chain Analysis</li>
+                        <li><i class="fa-solid fa-check"></i> Hedging Strategies</li>
+                        <li><i class="fa-solid fa-check"></i> Expiry Day Trading</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media" class="section">
+        <div class="container">
+            <h2 class="section-title">Follow & Learn <span class="highlight">Daily</span></h2>
+            <div class="social-grid">
+                <a href="https://www.youtube.com/@Eagle_Traders_Club" target="_blank" class="social-card youtube-card">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h3>Eagle_Trader's_Club</h3>
+                    <p>Subscribe for Daily Market Analysis</p>
+                </a>
+                <a href="https://instagram.com/eagle_traders__club" target="_blank" class="social-card instagram-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>@eagle_traders__club</h3>
+                    <p>Follow for Educational Reels</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Modal -->
+    <div id="join-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-btn" onclick="closeJoinModal()">&times;</span>
+            <h2>Join Eagle Traders Club</h2>
+            <p>New Batch Starts 15th of this Month!</p>
+            
+            <form id="joinForm" onsubmit="submitJoinForm(event)">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" id="age" required placeholder="Your Age">
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" id="location" required placeholder="City, State">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Language</label>
+                    <select id="language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" id="mobile" required placeholder="Your WhatsApp Number">
+                </div>
+                <button type="submit" class="submit-btn glow-effect">Send Request via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919542551884?text=Hi,%20I%20want%20to%20join%20the%20next%20batch%20at%20Eagle%20Traders%20Club" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">Join Next Batch</span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Eagle Traders Club</h3>
+                <p>New Batch Starts Every Month on 15th</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.youtube.com/@Eagle_Traders_Club" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/eagle_traders__club" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/919542551884" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="trust-disclaimer">
+                <p><strong>Disclaimer:</strong> Educational Purpose Only. Stock market investments are subject to market risks.</p>
+                <p>&copy; 2026 Eagle Traders Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
